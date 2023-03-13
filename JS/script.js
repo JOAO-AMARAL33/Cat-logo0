@@ -1,31 +1,42 @@
-class Ator
-{
-    constructor(id,nome){
-        this.nome=nome;
-        this.id=id;
+let inputBuscarFilme = document.querySelector("#input-buscar-filme");
+let btnBuscarFilme = document.querySelector("#btn-buscar-filme");
+
+btnBuscarFilme.onclick =  () => {
+    if(inputBuscarFilme.value.length > 0){
+        let filmes = new Array();
+        fetch("http://www.omdbapi.com/?apikey=91b5a1f6&s=" +  inputBuscarFilme.value, {mode:"cors"})
+        .then((resp) => resp.json())
+        .then((resp) => {
+            resp.Search.forEach((item) => {
+                console.log(item);
+                let filme = new Filme(
+                    item.imdbID,
+                    item.Title,
+                    item.Year,
+                    null,
+                    null,
+                    null,
+                    item.Poster,
+                    null,
+                    null,
+                    null,
+                    null,
+                );
+                filmes.push(filme);
+            });
+            listarFilmes(filmes);
+        })
+    }
+    return false;
+}
+
+let listarFilmes = async (filmes) => {
+    let listaFilmes = await document.querySelector("#lista-filmes");
+    listaFilmes.innerHTML = "";
+    console.log(listaFilmes);
+    if(filmes.length > 0) {
+        filmes.forEach(async(filme) => {
+            listaFilmes.appendChild(await filme.getCard());
+        });
     }
 }
-class Diretor
-{
-    constructor(id,nome){
-        this.nome=nome;
-        this.id=id;
-    }
-}
-class Filme
-{
-    constructor(id,titulo,ano,genero,duracao,sinopse,cartaz,direcao,elenco,classificacao,avaliacao){
-        this.id=id;
-        this.titulo=titulo;
-        this.ano=ano;
-        this.genero=genero;
-        this.duracao=duracao;
-        this.sinopse=sinopse;
-        this.cartaz=cartaz;
-        this.direcao=direcao;
-        this.elenco=elenco;
-        this.classificacao=classificacao;
-        this.avaliacao=avaliacao;
-    }
-}
-fetch('http://www.omdbapi.com/?i=tt3896198&apikey=bb1d4839');
