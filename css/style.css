@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#lista-filmes{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+#logo{
+    width: 3rem;
+    height: 2.8rem;
+}
+
+
+
+.card img{
+    max-width: 50vh;
+    height: 22rem;
+}
+.card{
+    width: 40vh;
+    margin-left: 3vh;
+    margin-bottom: 5vh;
+    
+}
+.btnDetalhesFilme{
+    margin-top: 0.7rem;
+    margin-left: 6.2rem;
+    color: #198754;
+    background-color: transparent;
+    border-color: #198754;
+    font-size: 1rem;
+    padding: 0.335rem 0.65rem;
+    font-size: 1rem;
+    border-radius: 1.3rem;
+}
+.btnDetalhesFilme:hover{
+    border-color: transparent;
+    color: white;
+    background-color: #198754;
+}
