@@ -1,0 +1,151 @@
+
+*{
+    margin: 3;
+    padding: 4;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    
+}
+body{
+    color: aliceblue;
+    background-color: #000000;
+}
+.navbar-brand{
+    font-family: 'Oswald';
+}
+#input-buscar-filme{
+    width: 100%;
+}
+#listar-filmes{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+#logo{
+    width: 4rem;
+    height: 4rem;
+}
+.card-img-topz{
+    width: 20.63rem;
+    height: 35rem;
+    border-radius: 0rem;
+}
+.card{
+    width: 20.73rem;
+    height: 39rem;
+    margin: 1rem;
+}
+.card:hover{
+    background-color: #000000;
+    transition: background-color .15s ease-in-out;
+    width: 20.73rem;
+    height: 39rem;
+    margin: 1rem;
+    
+}
+.card-title{
+    font-family: 'Oswald';
+}
+.btnDetalhesFilme{
+    margin-top: 1rem;
+    margin-left: 6rem;
+    color: #195fc9;
+    background-color: transparent;
+    border-color: #000000;
+    border: 1px solid #000000;
+    font-size: 1rem;
+    padding: 0.335rem 2rem;
+    font-size: 1rem;
+    border-radius: 1.3rem;
+    transition: color .15s ease-in-out,
+    background-color .15s ease-in-out,
+    border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+}
+.btnDetalhesFilme:hover{
+    border-color: transparent;
+    color: white;
+    background-color: #195fc9;
+}
+#div-fechar{
+    float: left;
+}
+#btn-fechar{
+    float: left;
+    display: flex;
+    margin-top: 2.5rem;
+    margin-left: 80rem;
+    font-weight: 500;
+    color: #ca3535;
+    background-color: transparent;
+    border-color: #ca3535;
+    border: 1px solid #ca3535;
+    font-size: 1rem;
+    padding: 0.335rem 2rem;
+    border-radius: 1.3rem;
+    transition: color .15s ease-in-out,
+    background-color .15s ease-in-out,
+    border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+}
+#btn-fechar:hover{
+    border-color: transparent;
+    color: white;
+    background-color: #ca3535;
+}
+#div-salvar{
+    float: left;
+}
+#btn-salvar{
+    float: left;
+    display: flex;
+    margin-top: 1.7rem;
+    margin-left: -84.5rem;
+    color: #000000;
+    font-weight: 500;
+    background-color: transparent;
+    border-color: #000000;
+    border: 1px solid #0be152;
+    font-size: 1rem;
+    padding: 0.335rem 5.7rem;
+    border-radius: 1.3rem;
+    transition: color .15s ease-in-out,
+    background-color .15s ease-in-out,
+    border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+}
+#btn-salvar:hover{
+    border-color: transparent;
+    color:  #000000;
+    background-color:#0be152;
+}
+#btn-salvar:active{
+    background-color: #66e0a7;
+}
+
+#mostrar-filme{
+    display: flex;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    font-weight: 500;
+    text-shadow: 0rem 0rem 0.5rem 0rem rgb(103, 103, 103);
+}
+#imagem-detalhes{
+    width: 20.63rem;
+    height: 30rem;
+    border-radius: 0.25rem;
+    box-shadow: 0rem 0rem 0.5rem 0rem rgb(103, 103, 103);
+}
+#div-detalhes-card{
+    float: left;
+    margin-top: -29rem;
+    margin-left: 22rem;
+    background-color: #f8f9fa;
+    border-radius: 0.3rem;
+    line-height: 3rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Permanent+Marker&family=Staatliches&display=swap');
